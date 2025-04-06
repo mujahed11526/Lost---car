@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>إضافة عربة</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; background: #f9f9f9; }
+    h1 { text-align: center; }
+    form { display: flex; flex-direction: column; gap: 12px; }
+    label { font-weight: bold; }
+    input, textarea, select {
+      padding: 10px; border-radius: 6px; border: 1px solid #ccc;
+    }
+    button {
+      padding: 12px; background: #2196F3; color: white; border: none;
+      border-radius: 8px; font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>إضافة بيانات عربة مفقودة</h1>
+
+  <form>
+    <label>نوع العربة:</label>
+    <select>
+      <option>صالون</option>
+      <option>هايس</option>
+      <option>دفار</option>
+      <option>موتر</option>
+      <option>آلية ثقيلة</option>
+      <option>أخرى</option>
+    </select>
+
+    <label>رقم اللوحة (إن وُجد):</label>
+    <input type="text">
+
+    <label>رقم الشاسي:</label>
+    <input type="text">
+
+    <label>رقم الماكينة:</label>
+    <input type="text">
+
+    <label>موقع العربة أو مكان العثور عليها:</label>
+    <input type="text">
+
+    <label>وصف إضافي (لون، حالة...):</label>
+    <textarea rows="3"></textarea>
+
+    <label>إرفاق صورة:</label>
+    <input type="file">
+
+    <label>رقم التواصل:</label>
+    <input type="text">
+
+    <button type="submit">حفظ العربة</button>
+  </form>
+
+</body>
+</html>
